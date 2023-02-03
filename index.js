@@ -10,14 +10,20 @@ const products = [
   {
     id: 1,
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    description:
+      "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
   },
   {
     id: 2,
     title: "Mens Casual Premium Slim Fit T-Shirts ",
+    description:
+      "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, ribbed cuffs.",
   },
   {
     id: 3,
     title: "Mens Cotton Jacket",
+    description:
+      "Great for any time, casual or dress,perfect for Spring/Autumn and Winter, Good for working, Daily wear...",
   },
 ];
 //--------------------------------------------------------
@@ -87,7 +93,7 @@ app.delete("/api/products/:id", (req, res) => {
 
 //po cia runnins serveris ir daugiau nerasyti
 //apsirasome porta, kuriame bus paleistas serveris
-const port = 3000;
+const port = 3001;
 
 //svarbu 2. tik tada kai sukurtas, egzistuojantis route'as, paleidziame serveri
 app.listen(port, () => {
